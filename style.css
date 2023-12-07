@@ -1,0 +1,503 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0.8rem 5rem 0px 5rem;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #3366cc;
+}
+p{
+    font-size: 14px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-ul-left{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    justify-items: center;
+}
+.header-ul-left .burger-menu{
+    width: 20px;
+    height: 20px;
+    margin-right:1.5rem ;
+}
+.header-ul-left .wiki-logo{
+    width: auto;
+    height: 50px;
+}
+.header-ul-left .wikipedia-img{
+    width: 150px;
+    height: 40px;
+    margin-right: 5rem;
+}
+
+.header-ul-left li div {
+    border: 1px solid #a2a9b1;
+    height: 30px;
+    width: 48rem;
+    display: flex;
+    justify-content: center;
+}
+.header-ul-left li div img{
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"%23202122\"><path d=\"M12.2 13.6a7 7 0 111.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1010 0A5 5 0 003 8z\"/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    opacity: .51;
+}
+.header-ul-left li div input {
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 37rem;
+    font-size: 1.4rem;
+    margin-left: 5px;
+}
+.header-ul-left li div button {
+    background-color: #f8f9fa;
+    border: solid #a2a9b1;
+    border-width: 0px 0px 0px 1px;;
+    color: #404244;
+    font-weight: 700;
+    font-size: 1.4rem;
+    height: 2.8rem;
+    width: 8rem;
+    cursor: pointer;
+}
+.header-ul-right {
+    display: flex;
+    align-items: center;
+}
+.header-ul-right a{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #3366cc;
+    margin-right: 10px;
+}
+.three-dots-icon{
+    width: 2rem;
+    height: 2rem;
+    padding-top: 3px;
+    margin-left: 2px;
+}
+.banner-section{
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+.banner-section .banner-logo{
+    width: 180px;
+    height: 60px;
+    margin: 0.5rem 8rem 0.5rem 3rem;
+}
+.banner-section .banner-title {
+    color: #222;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    height: 50px;
+    width: 880px;
+    flex-shrink: 0;
+    padding-top: 25px;
+    
+}
+.banner-section .banner-help {
+    color: #3366cc;
+    font-size: 1rem;
+    height: 16px;
+    width: 160px;
+    position: relative;
+    top: 55px;
+    right: 150px;
+    flex-shrink: 0;
+    
+}
+.banner-section .banner-X{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    left: 40px;
+    top: 5px;
+}
+main{
+    padding: 5rem 14rem 1rem 14rem;
+}
+.navbar-section{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.navbar-section .navbar-ul-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  
+}
+.navbar-section .navbar-ul-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+.navbar-section .navbar-ul-left li{
+    width: 70px;
+    color: #3366cc;
+    font-size: 1.5rem;
+}
+.navbar-section .navbar-ul-left li:hover, .navbar-ul-right li:hover {
+    color: #414242;
+    text-decoration: underline 2px #202122;
+    outline-offset: 10px;
+}
+.navbar-section .navbar-ul-right li {
+    color: #3366cc;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+.navbar-section .navbar-ul-right li img{
+    width: 35px;
+    height: 35px;
+
+}
+.navbar-section .navbar-ul-right .li-tools{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+.li-tools p{
+    color: #414242;
+}
+.navbar-line{
+    border-top: 1px solid #c8ccd1;
+    
+}
+.main-banner{
+    width: 100%;
+    height: 130px;
+    margin: 18px 0px 0px 0px;
+    border: 1px solid #c8ccd1;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    border-radius: 2px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg');
+    background-position: right;
+    display: flex;
+}
+.main-banner .div-title{
+    width: 50%;
+    display: block;
+    padding: 3rem 2rem 3rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.main-banner .div-title div{
+    display: flex;
+}
+
+.main-banner .div-title .a-title {
+    color: #3366cc;
+    font-size: 28px;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+    height: 50%;
+    margin-right: 1rem;
+}
+
+.main-banner .div-title h1{
+    font-size: 28px;
+    width: 160px;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+    font-weight: normal;
+    flex-shrink: 0; 
+}
+.main-banner .div-title p{
+    font-size: 14px;
+    height: 40px;
+    width: 200px;
+    margin-top: 5px;
+}
+.main-banner .div-title .a-text{
+    position: relative;
+    top: 21px;
+    right: 140px;
+    font-size: 14px;
+    color: #3366cc;
+    width: 140px;
+}
+
+.main-banner .div-options{
+    width: 70%;
+    display: inline-block;
+    padding: 3rem 2rem 3rem 2rem;
+}
+.main-banner .div-options div {
+    display: flex;
+    justify-content: end;
+    padding-top: 14px;
+} 
+.main-banner .div-options div .a-number{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.main-banner .div-options div a {
+    font-size: 14px;
+    margin-left: 5px;
+    
+}
+.main-banner .div-options ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.main-banner .div-options ul li {
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 13px;
+}
+.outstanding-article{
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    margin-top: 18px;
+}
+ h2{
+    color: #72777d;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+.a-title{
+    color: #000000;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.outstanding-article p{
+    margin-top: 10px;
+    color: #202122;
+    font-weight: lighter;
+}
+.outstanding-article p b {
+    font-weight: bold;
+    font-style: italic;
+}
+.outstanding-article .disc-img{
+    position: relative;
+    float: right;
+ }
+.footer-article button {
+    color: #202122;
+    border-radius: 3px;
+    font-weight: bold;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    width: 60px;
+    height: 27px;
+    margin-top: 15px;
+    margin-right: 10px;
+ }
+ .footer-article span {
+    color: #202122;
+    font-weight: bold;
+    font-size: 14px;
+ }
+ .left-content .footer-article .three-dots-icon{
+    position: relative;
+    left: 200px;
+    top: 4px;
+ }
+ .right-content .footer-article .three-dots-icon{
+    position: relative;
+    left: 140px;
+    top: 4px;
+ }
+ .news-article{
+    border: 1px solid #a2a9b1;
+    padding: 16px;
+    margin-top: 18px;
+ }
+ .news-article ul li {
+    margin-left: 22px;
+    list-style: disc;
+    font-size: 14px;
+    margin-top: 8px;
+ }
+ .news-article ul li .deaths-img{
+float: right;
+ }
+ .news-article h3{
+    color: #3366cc;
+    font-size: 14px;
+    margin: 10px;
+ }
+ .news-article h4{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+ }
+ .news-article h4 b {
+    color: #3366cc;
+    font-weight: normal;
+ }
+ .news-article .footer-article .other-event-button{
+    width: 200px;
+ }
+.news-article .footer-article .date-button{
+    width: 110px;
+    height: 40px;
+    margin-right: 0px;
+    border: none;
+    background-color: white;
+    padding: 0px 20px 0px 20px;
+ }
+ .news-article .footer-article .date-button:hover{
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+ }
+ .news-article .footer-article .date-button + .three-dots-icon{
+    left: 10px;
+    top: -5px;
+ }
+.world-img{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 5px;
+ }
+ .outstanding-article picture{
+    font-size:14px; 
+    text-align:center;
+ }
+ .outstanding-article .archive-button{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+ }
+ .outstanding-article .archive-button:hover{
+    color: #3366cc;
+    background-color: #f8f9fa;
+ }
+.outstanding-article ul li{
+    border-bottom: 1px dotted #c088fe;
+    padding: 1rem 0rem 1rem 0rem;
+ }
+ .outstanding-article ul li:last-child{
+    border-bottom: none;
+    padding: 1rem 0rem 1rem 0rem;
+ }
+.outstanding-article ul li a{
+    font-size: 12px;  
+    margin-top: 20px; 
+ }
+.outstanding-article ul li img{
+    float: inline-end;
+ } 
+.grid-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+}
+.grid-div div{
+    margin: 10px;
+}
+.grid-div div h3{
+    margin: 0px;
+}
+.grid-div div img{
+    float: left;
+    margin-right: 10px;
+    margin: 10px;
+}
+.meta-wiki-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    
+}
+.language-button{
+    background-color: white;
+    color: #3366cc;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 20px;
+    position: relative;
+    left: 270px;
+}
+.language-button:hover{
+    background-color: #eaf3ff;
+    
+}
+.language-button img{
+    width: 30px;
+    height: 30px;
+}
+footer p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+footer ul{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+footer ul li a {
+    font-size: 12px;
+    margin-right: 12px;
+}
+footer ul + img{
+    width: 100px;
+}
+.footer-img{
+    margin-right: 8px;
+    margin-left: 60px;
+} 
+footer ul li img{
+    position: relative;
+    bottom: 5px;
+}
+.left-content{
+    width: 56%;
+}
+.right-content{
+    width: 42%;
+}
